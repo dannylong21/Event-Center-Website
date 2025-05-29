@@ -8,17 +8,16 @@
 
 body{
     margin: 10px;
-    background-color: lightblue;
 }
 
 .headercontainer .main-nav{
     height: 70px;
     width:100%;
-    background-color: #333;
+    background-color: white;
     display:flex;
     justify-content:space-between;
-    transition: 1s ease linear;
     border-radius: 10px;
+    
 }
 
 .main-nav .nav-list-items{
@@ -27,16 +26,17 @@ body{
     margin:auto;
     padding:auto;
     align-items:center;
+
 }
 
 .nav-list-items .list-item{
     padding: 10px 20px;
-    color: #fff;
     font-size: 18px;
 }
 
 .list-item {
     transition: all ease 0.5s;
+    animation: loadtop 1s ease;
 }
 
 .list-item:hover{
@@ -46,31 +46,79 @@ body{
 
 .list-item a{
     text-decoration:none;
-    color: #ffff;
+    color: rgb(85, 85, 85);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 20px;
     padding: 10px;
     transition: all ease 0.5s;
+    
+}
+
+.contactus{
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border:none;
+    transition: all ease 0.3s;
+    background-color:maroon;
+    color:white;
+    animation: loadright ease 1s;
+}
+
+.contactus a{
+    text-decoration:none;
+    font-family:'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva, 
+    Verdana, 
+    sans-serif;
+}
+
+.contactus:hover{
+    color: white;
+    background-color:rgb(170, 0, 0);
+    transition: all ease 0.3s;
+}
+
+.contactus a:visited{
+    color:inherit;
 }
 
 .list-item a:hover{
-    background-color:#292929;
+    background-color:#f0f0f0;
+    color:maroon;
     transition: all ease 0.5s;
 
 }
 
 .logo{
-    height: 50px;
-    width: 50px;
-    margin: auto 0;
-    display:flex;
-    align-items:center;
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto 10px;
+    line-height:150%;
+    animation: load 1s ease;
 }
 
-.logo a img{
-    padding: 10px;
+.logo .toptext{
+    font-size: 30px;
+    font-weight:bolder;
+    text-transform: uppercase;
+    color:black;
+    text-decoration:none;
+    margin-bottom: 0;
 }
+
+.nyc{
+    margin-top: 0;
+    color:maroon;
+    font-size: 25px;
+}
+
+
 
 /* MAIN CONTENT AREA --> */
 .maincontentcontainer{
@@ -81,55 +129,49 @@ body{
     display:flex;
     flex-direction: row;
     justify-content:space-around;
-    background-color:lightblue;
 }
 
-/* CARDS SECTION */
-
-.card a{
-    text-decoration:none;
-    color:black;
+/* BANNER IMAGE SECTION */
+.imagecontainer{
+    width: 100%;
 }
 
-.card a:visited {
-    text-decoration:none;
-    color:black;
+.image{
+    width: 100%;
+    height: 800px;
 }
 
+/* LOAD IN ANIMATIONS */
 
-.contentbox{
-    display:flex;
-    flex-direction: column;
-    text-align:center;
-    justify-items:center;
-    height: 600px;
-    width: 350px;
-    background-color:whitesmoke;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px black;
-    transition: all ease 0.3s;
+@keyframes load{
+0%{
+    transform: translateX(-100%);
 }
 
-.contentbox .card{
-    margin:5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+100%{
+    transform: translateX(0%);
+}
 }
 
-.contentbox:hover{
-    transform:translateY(-5px)
+@keyframes loadright{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
-.cardimg{
-    border-radius: 10px;
-    height: 270px;
-    padding: 5px;
+@keyframes loadtop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%)
+    }
 }
 
-.card-body{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-}
+/* MEDIA QUERIES */
 
 @media (max-width: 768px) {
     .nav-list-items{
