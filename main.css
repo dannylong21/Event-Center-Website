@@ -1,0 +1,145 @@
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    margin: 10px;
+    background-color: lightblue;
+}
+
+.headercontainer .main-nav{
+    height: 70px;
+    width:100%;
+    background-color: #333;
+    display:flex;
+    justify-content:space-between;
+    transition: 1s ease linear;
+    border-radius: 10px;
+}
+
+.main-nav .nav-list-items{
+    display:flex;
+    list-style-type: none;
+    margin:auto;
+    padding:auto;
+    align-items:center;
+}
+
+.nav-list-items .list-item{
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.list-item {
+    transition: all ease 0.5s;
+}
+
+.list-item:hover{
+    transition: all ease 0.5s;
+    transform: translateY(-5px);
+}
+
+.list-item a{
+    text-decoration:none;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all ease 0.5s;
+}
+
+.list-item a:hover{
+    background-color:#292929;
+    transition: all ease 0.5s;
+
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: auto 0;
+    display:flex;
+    align-items:center;
+}
+
+.logo a img{
+    padding: 10px;
+}
+
+/* MAIN CONTENT AREA --> */
+.maincontentcontainer{
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color:lightblue;
+}
+
+/* CARDS SECTION */
+
+.card a{
+    text-decoration:none;
+    color:black;
+}
+
+.card a:visited {
+    text-decoration:none;
+    color:black;
+}
+
+
+.contentbox{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    justify-items:center;
+    height: 600px;
+    width: 350px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    transition: all ease 0.3s;
+}
+
+.contentbox .card{
+    margin:5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contentbox:hover{
+    transform:translateY(-5px)
+}
+
+.cardimg{
+    border-radius: 10px;
+    height: 270px;
+    padding: 5px;
+}
+
+.card-body{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-list-items{
+        flex-direction: column;
+    }
+    .headercontainer .main-nav{
+        height: fit-content;
+   
+    }
+    .logo{
+        display:none;
+    }
+}
