@@ -187,6 +187,7 @@ min-width: 230px;
 min-width:fit-content;
 }
 
+
 .nav-list-items{
 min-width:fit-content;
 }
@@ -207,14 +208,13 @@ min-width:fit-content;
 }
 
 .image{
-position:relative;
 margin-top: 250px;
 max-height: 300px;
 max-width: 100%;
+min-width: 100%;
 }
 
 .contactus{
-display:flex;
 margin: 0 auto;
 min-width: 230px;
 min-height: 50px;
