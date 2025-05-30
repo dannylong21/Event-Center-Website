@@ -26,7 +26,6 @@ body{
     margin:auto;
     padding:auto;
     align-items:center;
-
 }
 
 .nav-list-items .list-item{
@@ -64,18 +63,15 @@ body{
     transition: all ease 0.3s;
     background-color:maroon;
     color:white;
+    width: fit-content;
     animation: loadright ease 1s;
 }
 
 .contactus a{
     text-decoration:none;
-    font-family:'Lucida Sans',
-    'Lucida Sans Regular',
-    'Lucida Grande',
-    'Lucida Sans Unicode',
-    Geneva, 
-    Verdana, 
-    sans-serif;
+    font-family:'Verdana';
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .contactus:hover{
@@ -118,6 +114,9 @@ body{
     font-size: 25px;
 }
 
+.aboutus{
+    text-align:center;
+}
 
 
 /* MAIN CONTENT AREA --> */
@@ -173,15 +172,60 @@ body{
 
 /* MEDIA QUERIES */
 
-@media (max-width: 768px) {
-    .nav-list-items{
-        flex-direction: column;
-    }
-    .headercontainer .main-nav{
-        height: fit-content;
-   
-    }
-    .logo{
-        display:none;
-    }
+@media (max-width: 1440px) {
+.contactus{
+min-width: 230px;
+align-items:center;
+}
+}
+
+@media (max-width: 884px) {
+.contactus{
+min-width: 230px;
+}
+.logo{
+min-width:fit-content;
+}
+
+.nav-list-items{
+min-width:fit-content;
+}
+}
+
+@media (max-width: 600px) {
+    .headercontainer{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    max-height: fit-content;
+}
+.main-nav{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+}
+
+.image{
+position:relative;
+margin-top: 250px;
+max-height: 300px;
+max-width: 100%;
+}
+
+.contactus{
+display:flex;
+margin: 0 auto;
+min-width: 230px;
+min-height: 50px;
+align-items:center;
+}
+
+.nav-list-items{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    min-width: fit-content;
+}
+
 }
