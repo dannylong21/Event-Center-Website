@@ -10,6 +10,10 @@ body{
     margin: 10px;
 }
 
+.headercontainer{
+    position:sticky;
+}
+
 .headercontainer .main-nav{
     height: 70px;
     width:100%;
@@ -97,6 +101,7 @@ body{
     margin: auto 10px;
     line-height:150%;
     animation: load 1s ease;
+    animation: float 3s ease-in-out infinite;
 }
 
 .logo .toptext{
@@ -114,9 +119,6 @@ body{
     font-size: 25px;
 }
 
-.aboutus{
-    text-align:center;
-}
 
 
 /* MAIN CONTENT AREA --> */
@@ -133,14 +135,32 @@ body{
 /* BANNER IMAGE SECTION */
 .imagecontainer{
     width: 100%;
+    display:flex;
 }
 
 .image{
+    display:flex;
     width: 100%;
     height: 800px;
+    animation: appear ease 4.5s;
 }
 
+.aboutus{
+    text-align:center;
+    animation: loadbottom ease 1s;
+}
+
+
 /* LOAD IN ANIMATIONS */
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 @keyframes load{
 0%{
@@ -167,6 +187,27 @@ body{
     }
     100%{
         transform: translateY(0%)
+    }
+}
+
+@keyframes loadbottom{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 
@@ -212,6 +253,10 @@ margin-top: 250px;
 max-height: 300px;
 max-width: 100%;
 min-width: 100%;
+}
+
+.imagecontainer{
+    display:block;
 }
 
 .contactus{
