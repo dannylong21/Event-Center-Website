@@ -1,0 +1,494 @@
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    margin: 10px;
+}
+
+.headercontainer{
+    position:sticky;
+}
+
+.headercontainer .main-nav{
+    height: 70px;
+    width:100%;
+    background-color: white;
+    display:flex;
+    justify-content:space-between;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 5px;
+}
+
+.main-nav .nav-list-items{
+    display:flex;
+    list-style-type: none;
+    margin:auto;
+    padding:auto;
+    align-items:center;
+}
+
+.nav-list-items .list-item{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.list-item {
+    transition: all ease 0.5s;
+    animation: loadtop 1s ease;
+}
+
+.list-item:hover{
+    transition: all ease 0.5s;
+    transform: translateY(-5px);
+}
+
+.list-item a{
+    text-decoration:none;
+    color: rgb(85, 85, 85);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all ease 0.5s;
+    
+}
+
+.contactus{
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border:none;
+    transition: all ease 0.3s;
+    background-color:maroon;
+    color:white;
+    width: fit-content;
+    animation: loadright ease 1s;
+}
+
+.contactus a{
+    text-decoration:none;
+    font-family:'Verdana';
+    font-size: 18px;
+    font-weight: bolder;
+    color:white;
+}
+
+.contactus:hover{
+    color: white;
+    background-color:rgb(170, 0, 0);
+    transition: all ease 0.3s;
+}
+
+.contactus a:visited{
+    color:inherit;
+}
+
+.list-item a:hover{
+    background-color:#f0f0f0;
+    color:maroon;
+    transition: all ease 0.5s;
+
+}
+
+.logo{
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto 10px;
+    line-height:150%;
+    animation: load 1s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.logo .toptext{
+    font-size: 30px;
+    font-weight:bolder;
+    text-transform: uppercase;
+    color:black;
+    text-decoration:none;
+    margin-bottom: 0;
+}
+
+.nyc{
+    margin-top: 0;
+    color:maroon;
+    font-size: 25px;
+}
+
+
+
+/* MAIN CONTENT AREA --> */
+
+.aboutus{
+    text-align:center;
+    animation: loadbottom ease 1s;
+}
+
+/* BANNER IMAGE SECTION */
+.imagecontainer{
+    width: 100%;
+    display:flex;
+}
+
+.image{
+    display:flex;
+    width: 100%;
+    height: 800px;
+    animation: appear ease 4.5s;
+    border-radius: 10px;
+}
+
+
+
+/* MEALS PAGE CSS */
+
+.mealsbodycontainer{
+    display:flex;
+    text-align:center;
+    margin: 10px auto;
+    justify-content:center;
+    background-color:white;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.pwrapper{
+    text-align:center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+/* SUBWAY TEXT */
+
+.subwayheader{
+font-family: 'verdana';
+word-spacing: 1px;
+display:inline-block;
+}
+
+.w::before{
+    content:'W';
+    background-color:red;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.e::before{
+    content: 'E';
+    background-color:yellow;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.l::before{
+    content:'L';
+    background-color:blue;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.c::before{
+    content: "C";
+    background-color:orange;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.o::before{
+    content: 'O';
+    background-color: green;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.m::before{
+    content: 'M';
+    background-color: red;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+.e::before{
+    content: 'E';
+    background-color: red;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.t::before{
+    content: 'T';
+    background-color: blue;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.o::before{
+    content: 'O';
+    background-color: yellow;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.p::before{
+    content: 'P';
+    background-color: orange;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.e::before{
+    content:'E';
+}
+
+.i::before{
+    content: 'I';
+    background-color: red;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.e::before{
+        content: 'E';
+        background-color: red;
+        font-size: 20px;
+        width: 85px;
+        border-radius: 50%;
+        align-items:center;
+        text-align:center;
+        padding: 5px;
+}
+
+.r::before{
+    content: 'R';
+    background-color: blue;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.seven::before{
+    content: '7';
+    background-color: purple;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.i::before{
+    content: 'I';
+}
+
+.n::before{
+    content: 'N';
+    background-color: purple;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.n::before{
+    content: 'N';
+}
+
+.y::before{
+    content: 'Y';
+    background-color: green;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 50%;
+    align-items:center;
+    text-align:center;
+    padding: 5px;
+}
+
+.c::before{
+    content: 'C';
+}
+/* ANIMATIONS */
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes load{
+0%{
+    transform: translateX(-100%);
+}
+
+100%{
+    transform: translateX(0%);
+}
+}
+
+@keyframes loadright{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes loadtop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}
+
+@keyframes loadbottom{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* Phones (max-width: 600px) */
+@media (max-width: 600px) {
+    .headercontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .nav-list-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-item {
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .maincontentcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        max-height: 500px;
+    }
+
+    .mealsbodycontainer {
+        margin: 5px auto;
+        padding: 15px;
+        width: 100%; /* Use full width for smaller screens */
+        box-shadow: none; /* Remove shadow for a cleaner look */
+    }
+    .contactus{
+        margin: 0 auto;
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .headercontainer {
+        padding: 0 10px;
+    }
+
+    .main-nav .nav-list-items {
+        gap: 10px;
+    }
+
+    .maincontentcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        max-height: 600px;
+    }
+
+    .mealsbodycontainer {
+        padding: 20px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+}
+
+/* Desktops (default styles) */
