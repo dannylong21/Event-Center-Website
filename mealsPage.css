@@ -33,14 +33,14 @@ body{
     align-items:center;
 }
 
-.nav-list-items .list-item{
-    padding: 10px 20px;
-    font-size: 18px;
-}
-
 .list-item {
+    display:flex;
+    justify-content:center;
     transition: all ease 0.5s;
     animation: loadtop 1s ease;
+    justify-content:center;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
 .list-item:hover{
@@ -127,6 +127,7 @@ body{
 
 .aboutus{
     text-align:center;
+    justify-content:center;
     animation: loadbottom ease 1s;
 }
 
@@ -134,6 +135,7 @@ body{
 .imagecontainer{
     width: 100%;
     display:flex;
+    justify-content:center;
 }
 
 .image{
@@ -171,7 +173,11 @@ body{
 .subwayheader{
 font-family: 'verdana';
 word-spacing: 1px;
-display:inline-block;
+display:flex;
+justify-content:center;
+align-items:center;
+gap: 10px;
+flex-wrap: wrap;
 }
 
 .w::before{
@@ -430,6 +436,7 @@ display:inline-block;
     .main-nav {
         flex-direction: column;
         height: fit-content;
+        width: 100%;
     }
 
     .nav-list-items {
@@ -445,13 +452,14 @@ display:inline-block;
         margin-bottom: 10px;
     }
 
-    .maincontentcontainer {
-        flex-direction: column;
-        align-items: center;
+    .imagecontainer{
+        max-width: 600px;
+        min-width: 100%;
     }
 
     .image {
-        max-height: 500px;
+        max-width: 100%;
+        min-width: 100%;
     }
 
     .mealsbodycontainer {
@@ -473,11 +481,6 @@ display:inline-block;
 
     .main-nav .nav-list-items {
         gap: 10px;
-    }
-
-    .maincontentcontainer {
-        flex-direction: column;
-        align-items: center;
     }
 
     .image {
